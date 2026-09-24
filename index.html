@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DailyMooovie — Tu recomendación de película diaria</title>
+  <meta name="description" content="DailyMooovie te recomienda una película diferente cada día a partir de su base de datos. Descarga la app para Android." />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:title" content="DailyMooovie" />
+  <meta property="og:description" content="Una recomendación de película nueva cada día. Descarga la app para Android." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <section class="card">
+      <div class="logo" aria-hidden="true">🎬</div>
+
+      <h1>DailyMooovie</h1>
+      <p class="tagline">Una película nueva para descubrir cada día.</p>
+
+      <p class="description">
+        DailyMooovie te recomienda una película diaria seleccionada a partir de
+        su propia base de datos, con toda la información que necesitas para decidir
+        qué ver hoy. Sin listas interminables: solo la película del día, lista para ti.
+      </p>
+
+      <a class="download-btn" href="dailymooovie.apk" download>
+        <span class="download-icon" aria-hidden="true">⬇</span>
+        Descargar para Android
+      </a>
+
+      <p class="meta">Archivo .apk · ~9 MB · Android</p>
+
+      <details class="install-help">
+        <summary>¿Cómo instalar el APK?</summary>
+        <ol>
+          <li>Descarga el archivo tocando el botón de arriba.</li>
+          <li>Abre el archivo descargado desde tu gestor de archivos o notificaciones.</li>
+          <li>Si Android lo pide, permite la instalación desde <em>orígenes desconocidos</em>.</li>
+          <li>Confirma la instalación y ¡listo!</li>
+        </ol>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> DailyMooovie</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
